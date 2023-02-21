@@ -107,3 +107,94 @@ html {
   font-weight: 200;
   color: var(--pale-blue);
 }
+
+/* Summary Styles */
+
+.summary {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 15px;
+  padding: 30px;
+}
+
+.summary__title {
+  font-size: 18px;
+}
+
+.list {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 10px;
+}
+
+.item {
+  /* background-color: rgba(255, 85, 85, 0.15); */
+  padding: 10px 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.item-name {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.item-name__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-name__name {
+  /* color: rgb(255, 85, 85); */
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.item__score {
+  font-size: 14px;
+  color: var(--dark-gray-blue);
+  font-weight: 300;
+}
+
+.item__score > span {
+  font-weight: 800;
+  color: black;
+}
+
+.item--reaction {
+  background-color: rgba(255, 85, 85, 0.15);
+}
+
+.item--reaction .item-name__name {
+  color: rgb(255, 85, 85);
+}
+
+.item--memory {
+  background-color: rgba(255, 178, 30, 0.15);
+}
+
+.item--memory .item-name__name {
+  color: rgb(255, 178, 30);
+}
+
+.item--verbal {
+  background-color: rgba(0, 187, 143, 0.15);
+}
+
+.item--verbal .item-name__name {
+  color: rgb(0, 187, 143);
+}
+
+.item--visual {
+  background-color: rgba(17, 37, 214, 0.15);
+}
+
+.item--visual .item-name__name {
+  color: rgb(17, 37, 214);
+}
