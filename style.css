@@ -198,3 +198,15 @@ html {
 .item--visual .item-name__name {
   color: rgb(17, 37, 214);
 }
+
+.button {
+  background-color: var(--dark-gray-blue);
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.button:active {
+  background-image: linear-gradient(to bottom, rgb(130 73 228), rgba(49, 46, 212, 1));
+}
