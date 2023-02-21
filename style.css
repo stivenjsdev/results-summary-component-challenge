@@ -210,3 +210,64 @@ html {
 .button:active {
   background-image: linear-gradient(to bottom, rgb(130 73 228), rgba(49, 46, 212, 1));
 }
+
+/* @media screen and (min-width: 375px) { */
+@media screen and (min-width: 420px) {
+  body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    flex-flow: row nowrap;
+    column-gap: 0;
+    max-width: 500px;
+    max-height: 400px;
+    box-shadow: rgba(54, 48, 213, 0.06) 15px 14px 15px;
+    border-radius: 25px;
+    margin: 10px;
+  }
+
+  .result {
+    border-radius: 25px;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    padding: 25px 40px 25px 40px;
+    row-gap: 20px;
+  }
+
+  .summary {
+    flex-shrink: 1;
+    flex-basis: 250px;
+    padding: 0;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .summary__title {
+    width: 90%;
+  }
+
+  .list {
+    align-items: center;
+    width: 80%;
+    min-width: 168px;
+  }
+
+  .button {
+    width: 85%;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .score-container {
+    width: 130px;
+    height: 130px;
+  }
+}
