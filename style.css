@@ -20,3 +20,90 @@ button,
 input {
   outline: none;
 }
+
+/* Vars */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+@font-face {
+  font-family: 'hanken';
+  src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+html {
+  font-size: 18px;
+  font-family: 'hanken', Arial, Helvetica, sans-serif;
+}
+
+/* Styles */
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  column-gap: 20px;
+}
+
+.result {
+  background: linear-gradient(to bottom, rgb(130 73 228), rgba(49, 46, 212, 1));
+  color: white;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 15px 50px 25px 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  /* justify-content: center; */
+  row-gap: 15px;
+}
+
+.result__title {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--pale-blue);
+}
+
+.score-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(to top, rgb(130, 73, 228, 0.3), rgba(49, 46, 212, 1));
+  /* border: 1px solid black; */
+}
+
+.score-container__score {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.score-container__max {
+  font-size: 10px;
+  font-weight: 100;
+  color: var(--pale-blue);
+}
+
+.score-message {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.score-message__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.score-message__info {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+  color: var(--pale-blue);
+}
